@@ -10,7 +10,7 @@ addEventListener('resize', () => {
 })
 
 c.strokeStyle = 'white'
-c.fillStyle = 'blue'
+c.fillStyle = 'red'
 c.rect(100, 20, 150, 100)
 c.stroke()
 c.fill()
