@@ -9,28 +9,16 @@ addEventListener('resize', () => {
   canvas.height = innerHeight
 })
 
-while (true) {
-  setTimeout(() => {  c.strokeStyle = 'white'
-  c.fillStyle = 'red'
-  c.rect(100, 20, 150, 100)
-  c.stroke()
-  c.fill()
-  console.log("red")}, 5000);
-  c.clearRect(0, 0, canvas.width, canvas.height)
-  
-  setTimeout(() => {  c.strokeStyle = 'white'
-  c.fillStyle = 'blue'
-  c.rect(100, 20, 150, 100)
-  c.stroke()
-  c.fill()
-  console.log("red")}, 5000);
-  c.clearRect(0, 0, canvas.width, canvas.height)
+c.strokeStyle = 'white'
+c.fillStyle = 'blue'
+c.rect(100, 20, 150, 100)
+c.stroke()
+c.fill()
 
-  setTimeout(() => {  c.strokeStyle = 'white'
-  c.fillStyle = 'green'
-  c.rect(100, 20, 150, 100)
-  c.stroke()
-  c.fill()
-  console.log("red")}, 5000);
-  c.clearRect(0, 0, canvas.width, canvas.height)
-}
+c.fillStyle = 'red'
+c.fillRect(400, 500, 300, 250)
+
+// Uncomment to remove the first two blocks
+// c.clearRect(0, 0, canvas.width, canvas.height)
+c.fillStyle = 'green'
+c.fillRect(1500, 500, 300, 250)
